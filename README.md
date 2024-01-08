@@ -2,7 +2,7 @@
 
 The following guide shows the steps to configure several popular LMS to work with the Assessment application. If your LMS is not listed here, consult your LMS vendor on how to configure LTI application. Regardless of the LMS, the typical workflow should remain the same:
 
-1. Obtain parameters from the deployed Assessment application’s registration page
+1. Obtain parameters from the deployed Assessment application’s registration page: `https://cohota-demo.heyhi.sg/adminv2/lti`
 2. Configure an LTI tool on the LMS using the parameters from step 1.
 3. Obtain parameters from the configured LTI tool.
 4. Configure the Assessment application using the parameters from step 3.
