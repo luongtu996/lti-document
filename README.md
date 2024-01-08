@@ -37,9 +37,19 @@ The LTI 1.3 and LTI Advantage platform requires a tool to be initially configure
 6. Click **Save**. The key should now appear and listed with the name you provided.
    ![Config.Canvas.1](/images/config.canvas.1.png)
 7. Ensure that the newly added key is set to **Enabled**.
+   ![Config.Canvas.1](/images/config.canvas.8.png)
 8. Take note of the following parameters:
 * **Client ID**: the number in the **Details** column, above the **Show Key** button
   ![Config.Canvas.2](/images/config.canvas.2.png)
+
+*Note: if you use self-hosted canvas. You need to change "domain" in "Developer Key"
+
+1. Click button "Edit"
+   ![Config.Canvas.1](/images/config.canvas.8.png)
+2. **Method**: select **Paste JSON** 
+3. Edit value of "platform" key to your self-hosted canvas domain
+   ![Config.Canvas.1](/images/config.canvas.9.png)
+4. click **Save**
 
 At the account level, external tools must be installed in the External Apps page in Account Settings. LTI Advantage apps can be added via the Client ID option. Only the Client ID is required to be added.
 
@@ -70,5 +80,26 @@ The following steps show how to register the parameters back in the Learn LTI ap
   ![Config.Canvas.5](/images/config.canvas.5.png)
 5. Click **SAVE**.
    ![Config.Canvas.6](/images/config.canvas.6.png)
-You're all set. The Learn LTI tool is now configured on your Canvas LMS and your Educators will be able to use it to bring Assessment content to their courses. 
+You're all set. The Learn LTI tool is now configured on your Canvas LMS and your Educators will be able to use it to bring Assessment content to their courses.
+
+
+
+
+1. Open your LMS and sign in with the admin account (Users who want to manage Developer Keys must have the **Developer Keys - manage** permission).
+2. Click **Admin** from the left navigation pane, then click the name of the account.
+3. Click **Developer Keys**.
+4. Click **+Developer Key** and click **+LTI Key**.
+5. Enter the following information:
+* **Key Name**: give the tool a name of your choice. For example: "HeyHi Assessment".
+* **Redirection URIs**: enter the "Redirect Url" from Assessment application’s lti page.
+* **Method**: select **Enter URL**
+* **JSON URL**: enter the "Config Url" from Assessment application’s lti page.
+6. Click **Save**. The key should now appear and listed with the name you provided.
+   ![Config.Canvas.1](/images/config.canvas.1.png)
+7. Ensure that the newly added key is set to **Enabled**.
+   ![Config.Canvas.7](/images/config.canvas.7.png)
+8. Take note of the following parameters:
+* **Client ID**: the number in the **Details** column, above the **Show Key** button
+  ![Config.Canvas.2](/images/config.canvas.2.png)
+
 
