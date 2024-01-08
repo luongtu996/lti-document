@@ -31,8 +31,9 @@ The LTI 1.3 and LTI Advantage platform requires a tool to be initially configure
 4. Click **+Developer Key** and click **+LTI Key**.
 5. Enter the following information:
 * **Key Name**: give the tool a name of your choice. For example: "HeyHi Assessment".
-* **Redirection URIs**: enter the "Redirect Url" from Assessment application’s registration page.
+* **Redirection URIs**: enter the "Redirect Url" from Assessment application’s lti page.
 * **Method**: select **Enter URL**
+* **JSON URL**: enter the "Config Url" from Assessment application’s lti page.
 6. Click **Save**. The key should now appear and listed with the name you provided.
    ![Config.Canvas.1](/images/config.canvas.1.png)
 7. Ensure that the newly added key is set to **Enabled**.
