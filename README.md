@@ -70,5 +70,5 @@ The following steps show how to register the parameters back in the Learn LTI ap
   ![Config.Canvas.5](/images/config.canvas.5.png)
 5. Click **SAVE**.
    ![Config.Canvas.6](/images/config.canvas.6.png)
-You're all set. The Learn LTI tool is now configured on your Canvas LMS and your Educators will be able to use it to bring Microsoft Learn content to their courses. 
+You're all set. The Learn LTI tool is now configured on your Canvas LMS and your Educators will be able to use it to bring Assessment content to their courses. 
 
