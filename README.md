@@ -42,21 +42,11 @@ The LTI 1.3 and LTI Advantage platform requires a tool to be initially configure
 * **Client ID**: the number in the **Details** column, above the **Show Key** button
   ![Config.Canvas.2](/images/config.canvas.2.png)
 
-*Note: if you use self-hosted canvas. You need to change "domain" in "Developer Key"
-
-1. Click button "Edit"
-   ![Config.Canvas.1](/images/config.canvas.8.png)
-2. **Method**: select **Paste JSON** 
-   ![Config.Canvas.1](/images/config.canvas.9.png)
-3. Edit value of "platform" key to your self-hosted canvas domain
-   ![Config.Canvas.1](/images/config.canvas.10.png)
-4. click **Save**
-
 At the account level, external tools must be installed in the External Apps page in Account Settings. LTI Advantage apps can be added via the Client ID option. Only the Client ID is required to be added.
 
 1. Click **Settings** from the left navigation pane.
 2. Click **Apps**.
-3. Click **+App**.
+3. Click **+App**.òn
 4. Enter the following information:
 * **Configuration Type**: select **By Client ID**
 * **Client ID**: enter the "Client ID" from the LTI key registration.
