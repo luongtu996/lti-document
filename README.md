@@ -66,7 +66,7 @@ The following steps show how to register the parameters back in the Learn LTI ap
 * **Authorization URL**: enter https://[tenant-name].instructure.com/api/lti/authorize_redirect
 * **Access Token URL**: enter https://[tenant-name].instructure.com/login/oauth2/token
   NOTE: [tenant-name] is where your Canvas tenant name hosted by instructure. For example if the url of the LMS is https://canvas1.instructure.com, then the [tenant-name] is "canvas1". If you are using self-hosted Canvas, replace https://[tenant-name].instructure.com with your canvas URL.
-* **Issuer**: enter **https://canvas.instructure.com** (this should always be canvas.infrastructure.com not matter your tenant url)
+* **Issuer**: enter your lms issuer, default is **https://canvas.instructure.com**
 * **Deployment ID**: enter **Deployment ID** from the app
   ![Config.Canvas.5](/images/config.canvas.5.png)
 5. Click **SAVE**.
