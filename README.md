@@ -1,22 +1,3 @@
-# Configure the tool
-
-The following guide shows the steps to configure several popular LMS to work with the Assessment application. If your LMS is not listed here, consult your LMS vendor on how to configure LTI application. Regardless of the LMS, the typical workflow should remain the same:
-
-1. Obtain parameters from the registration page: `https://cohota-demo.heyhi.sg/adminv2/lti`
-2. Configure an LTI tool on the LMS using the parameters from step 1.
-3. Obtain parameters from the configured LTI tool.
-4. Configure the Assessment application using the parameters from step 3.
-
-By now, you should've obtained the following parameters from the registration page. 
-
-- Redirect Url
-- Login Url
-- Config Url
-
-## Canvas LMS
-
-The following steps show how to configure an LTI tool on a Canvas LMS.
-
 ### LTI 1.1
 
 Please note that the API integration has been deprecated for LTI 1.1, and can only be used with LTI 1.3. Consider setting up with LTI 1.3 instead.
@@ -31,6 +12,7 @@ Please note that the API integration has been deprecated for LTI 1.1, and can on
     - Consumer Key
     - Secret Key
     - Config Url
+![Config.Canvas.3](/images/v1.1/canvas3.png)
 
 #### FROM LMS
 
@@ -52,7 +34,21 @@ You're all set. The Learn LTI tool is now configured on your Canvas LMS and your
 
 ### LTI 1.3
 
-The LTI 1.3 and LTI Advantage platform requires a tool to be initially configured in the Developer Keys page, followed by being added to an account or course. First, configure the tool in the Developer Keys page.
+#### FROM ASSESSMENT
+
+1. Obtain parameters from the registration page: `https://cohota-demo.heyhi.sg/adminv2/lti`
+2. Configure an LTI tool on the LMS using the parameters from step 1.
+3. Obtain parameters from the configured LTI tool.
+4. Configure the Assessment application using the parameters from step 3.
+
+By now, you should've obtained the following parameters from the registration page. 
+
+- Redirect Url
+- Login Url
+- Config Url
+![Config.Canvas.11](/images/config.canvas.11.png)
+
+#### FROM LMS
 
 1. Open your LMS and sign in with the admin account (Users who want to manage Developer Keys must have the **Developer Keys - manage** permission).
 2. Click **Admin** from the left navigation pane, then click the name of the account.
