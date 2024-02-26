@@ -2,12 +2,12 @@
 
 The following guide shows the steps to configure several popular LMS to work with the Assessment application. If your LMS is not listed here, consult your LMS vendor on how to configure LTI application. Regardless of the LMS, the typical workflow should remain the same:
 
-1. Obtain parameters from the deployed Assessment application’s registration page: `https://cohota-demo.heyhi.sg/adminv2/lti`
+1. Obtain parameters from the registration page: `https://cohota-demo.heyhi.sg/adminv2/lti`
 2. Configure an LTI tool on the LMS using the parameters from step 1.
 3. Obtain parameters from the configured LTI tool.
 4. Configure the Assessment application using the parameters from step 3.
 
-By now, you should've obtained the following parameters from the Assessment application’s registration page. 
+By now, you should've obtained the following parameters from the registration page. 
 
 - Redirect Url
 - Login Url
@@ -19,7 +19,36 @@ The following steps show how to configure an LTI tool on a Canvas LMS.
 
 ### LTI 1.1
 
-At this time, we do not support LTI 1.1 with Canvas LMS.
+Please note that the API integration has been deprecated for LTI 1.1, and can only be used with LTI 1.3. Consider setting up with LTI 1.3 instead.
+
+#### FROM ASSESSMENT
+
+1. Obtain parameters from the registration page: `https://cohota-demo.heyhi.sg/adminv2/lti`
+2. Select LTI 1.1
+
+    By now, you should've obtained the following parameters from the registration page. 
+
+    - Consumer Key
+    - Secret Key
+    - Config Url
+
+#### FROM LMS
+
+1. Open your LMS and sign in with the admin account.
+2. Click **Admin** from the left navigation pane.
+3. Navigate to the account settings and select the **Apps** tab
+![Config.Canvas.1](/images/v1.1/canvas1.png)
+4. Click **+ App**. 
+5. Enter the following information:
+* **Configuration Type**: Select `By URL`
+* **Name**: Enter `Assessment Response Tool`
+* **Consumer Key**: Get from the app
+* **Shared Secret**: Get from the app
+* **Config URL**: Get from the app
+![Config.Canvas.2](/images/v1.1/canvas2.png)
+6. Click **Submit**.
+
+You're all set. The Learn LTI tool is now configured on your Canvas LMS and your Educators will be able to use it to bring Assessment content to their courses.
 
 ### LTI 1.3
 
@@ -46,7 +75,7 @@ At the account level, external tools must be installed in the External Apps page
 
 1. Click **Settings** from the left navigation pane.
 2. Click **Apps**.
-3. Click **+App**.òn
+3. Click **+App**.
 4. Enter the following information:
 * **Configuration Type**: select **By Client ID**
 * **Client ID**: enter the "Client ID" from the LTI key registration.
